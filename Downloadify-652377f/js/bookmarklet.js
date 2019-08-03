@@ -2,11 +2,12 @@
     /* options, customize to your needs */
     var title = 'screenshotify',
     server = 'https://raw.github.com/juancgarcia/screenshotify/master/Downloadify-652377f',
-    proxy = '//html2canvas.appspot.com',
+    server = 'https://github.com/mtco/screenshotify/raw/54bc7e1b00774decf7a3a45b1f29807b47314aab/Downloadify-652377f',
+    proxy = 'https://html2canvas.appspot.com',
     debug = true,
     profile = false,
     scriptFiles = [
-        '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
+        '//cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js', //'//cdn.jsdelivr.net/npm/jquery@1.7.1/dist/jquery.min.js', //'//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
         'js/jquery.plugin.html2canvas',
         'js/html2canvas'
     ];
@@ -21,6 +22,8 @@
             if (_.index < _.files.length) {
                 var el = document.createElement('script');
                 el.type = 'text/javascript';
+                el.charset = 'utf-8';
+                el.crossorigin = 'anonymous';
                 el.onload = function() {
                     _.onload();
                 };
