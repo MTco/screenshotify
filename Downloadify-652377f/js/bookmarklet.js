@@ -2,7 +2,7 @@
     /* options, customize to your needs */
     var title = 'screenshotify',
     server = 'https://raw.github.com/juancgarcia/screenshotify/master/Downloadify-652377f',
-    server = 'https://github.com/mtco/screenshotify/raw/54bc7e1b00774decf7a3a45b1f29807b47314aab/Downloadify-652377f',
+    server = 'https://github.com/mtco/screenshotify/raw/master/Downloadify-652377f',
     proxy = 'https://html2canvas.appspot.com',
     debug = true,
     profile = false,
